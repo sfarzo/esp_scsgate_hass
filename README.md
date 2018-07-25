@@ -8,7 +8,7 @@ Gli unici requisti sono:
 * una scheda [ESP_SCSGATE](http://guidopic.altervista.org/alter/esp_scsgate.html) installata e funzionante 
 * Home-assistant installato e funzionante
 
-La mia versione di Home-assistant installata al momento della scrittura di questa guida è: **0.74.1** . E' installata su un Raspberry Pi, in virtual-env, come descritto in questa [guida](https://www.home-assistant.io/docs/installation/raspberry-pi/). Le istruzioni che seguono quindi, andranno adattate ad eventuali modalità di installazioni differenti.
+La mia versione di Home-assistant installata al momento della scrittura di questa guida è: **0.74.1** . E' installata su un Raspberry Pi, in virtual-env, come descritto in questa [guida](https://www.home-assistant.io/docs/installation/raspberry-pi/). Le istruzioni che seguono quindi, andranno adattate ad eventuali modalità di installazione differenti.
 
 ## Installazione
 1) Prima di tutto stoppiamo l'istanza di Home-assistant in esecuzione:
@@ -47,7 +47,7 @@ $ unzip hardware.zip
  
  6) Riavviamo Home-assistant:
 ```
-$ sudo systemctl stop home-assistant@homeassistant
+$ sudo systemctl start home-assistant@homeassistant
 ``` 
 
 ## Configurazione
