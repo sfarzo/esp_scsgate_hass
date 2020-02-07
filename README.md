@@ -44,13 +44,13 @@ $ unzip hardware.zip
  $ mv scsgate.py scsgate.py.org
  $ cp /home/homeassistant/scsgate.py /srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/
  ```
- 5b) (per versioni >=0.88.0) E' necessario sostituire un file all'interno di Home-assistant. Il file si chiama *__init__.py* e nella mia installazione si trova nel path: */srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/scsgate/*
+ 5b) (per versioni >=0.88.0) E' necessario sostituire un file all'interno di Home-assistant. Il file si chiama *__init__.py* e nella mia installazione si trova nel path: */srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/scsgate/__init__.py*
  ``` 
  $ cd /home/homeassistant 
  $ wget https://github.com/vinciop/home-assistant/blob/dev/homeassistant/components/scsgate/__init__.py
  $ cd /srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/scsgate/
- $ mv scsgate.py scsgate.py.org
- $ cp /home/homeassistant/scsgate.py /srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/scsgate/
+ $ mv __init__.py __init__.py.org
+ $ cp /home/homeassistant/__init__.py /srv/homeassistant/lib/python3.5/site-packages/homeassistant/components/scsgate/
  ```
  6) Riavviamo Home-assistant:
 ```
